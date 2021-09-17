@@ -1,0 +1,5 @@
+﻿  오징어 게임.c
+C:\Users\유완규\git\language_study\컴퓨터프로그래밍연습문제\오징어 게임.c(12,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\유완규\git\language_study\컴퓨터프로그래밍연습문제\오징어 게임.c(17,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\유완규\git\language_study\컴퓨터프로그래밍연습문제\오징어 게임.c(30,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  컴퓨터프로그래밍연습문제.vcxproj -> C:\Users\유완규\git\language_study\컴퓨터프로그래밍연습문제\Debug\컴퓨터프로그래밍연습문제.exe
