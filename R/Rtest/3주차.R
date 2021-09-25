@@ -1,0 +1,7 @@
+name<-c('cndbs','wg','bae','sin')
+age<-c(20,20,33,5)
+gender<-c("PG","M","QT","F")
+dt<-data.frame(name,age,gender)
+dt2<-data.frame(name,age,gender,row.names=c("1번","2번","3번","4번"),stringsAsFactors=TRUE)
+str(dt)
+str(dt2)
