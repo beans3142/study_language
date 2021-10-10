@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10871 X보다 작은 수.c">
+    <ClCompile Include="지역변수와 전역변수.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
