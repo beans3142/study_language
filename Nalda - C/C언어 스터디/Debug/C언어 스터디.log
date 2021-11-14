@@ -1,3 +1,2 @@
-﻿  test.c
-C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\test.c(39,21): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+﻿  상수const와 포인터.cpp
   C언어 스터디.vcxproj -> C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\Debug\C언어 스터디.exe
