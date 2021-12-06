@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="상수const와 포인터.cpp">
+    <ClCompile Include="프로젝트 2-3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,2 +1,7 @@
-﻿  상수const와 포인터.cpp
+﻿  프로젝트 2-3.c
+C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\프로젝트 2-3.c(117,13): warning C4033: 'print_presentation_list'은(는) 값을 반환해야 합니다.
+C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\프로젝트 2-3.c(50,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\프로젝트 2-3.c(56,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\프로젝트 2-3.c(84,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\프로젝트 2-3.c(127): warning C4716: 'print_presentation_list': 값을 반환해야 합니다.
   C언어 스터디.vcxproj -> C:\Users\유완규\git\language_study\Nalda - C\C언어 스터디\Debug\C언어 스터디.exe
