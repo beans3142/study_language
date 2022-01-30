@@ -8,7 +8,6 @@ typedef struct STUDENT
     char classname[100];
 } student;
 
-
 int print_presentation_list(student* stu, int max_len)
 {
     // 정렬 및 출력은 Q1의 코드를 가져다 씀
@@ -82,12 +81,14 @@ int print_presentation_list(student* stu, int max_len)
         {
             printf("발표리스트에서 삭제할 학생 번호를 입력하세요 : ");
             scanf("%d", &no);
-            if (cnt<no)
+            if (cnt<no || no<1)
             {
                 printf("삭제할 학생이 없습니다.\n");
             }
             else if (0 < no && no <= max_len)
             {
+                // 발표가 불가능한 상태인 학생을 다시 발표 가능한 상태로 바꿔줌
+                used[rev[no - 1]] = 0;
                 for (int i = no - 1; i < cnt-1; i++)
                 {
                     // 한칸씩 당겨줌
@@ -95,8 +96,14 @@ int print_presentation_list(student* stu, int max_len)
                     tmp = present[i];
                     present[i] = present[i + 1];
                     present[i+1]= tmp;
+
+                    // 원래의 학생의 번호를 저장해놓은 배열도 한칸씩 앞당겨줌
+                    int tmp2;
+                    tmp2 = rev[i];
+                    rev[i]=rev[i+1];
+                    rev[i + 1] = tmp2;
                 }
-                used[rev[no-1]] = 0;
+                // 1명 줄었으므로
                 cnt--;
 
                 // 출력부 
@@ -107,20 +114,11 @@ int print_presentation_list(student* stu, int max_len)
                 }
                 printf("총 발표명 수 : %d\n", cnt);
             }
-            else
-            {
-                printf("잘못된 번호입니다.\n");
-            }
         }
         else if (choice == 3)
         {
             return;
         }
-        else
-        {
-            printf("잘못된 번호입니다.\n");
-        }
-
  
         printf("\n"); //예시에서 개행 해주는 것 같아서
     }

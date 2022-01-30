@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="프로젝트 2-3.c">
+    <ClCompile Include="시험대비 테스트용.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
