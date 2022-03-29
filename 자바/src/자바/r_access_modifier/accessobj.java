@@ -1,4 +1,4 @@
-package r_access_modifier;
+package 자바.r_access_modifier;
 
 public class accessobj {
 	public int a = 3; // 어떤 클래스든 접근할 수 있다는 의미

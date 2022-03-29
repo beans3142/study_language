@@ -1,6 +1,6 @@
-package r_access_modifier;
+package 자바.r_access_modifier;
 
-import r_access_modifier.accessobj;
+import 자바.r_access_modifier.accessobj;
 
 public class accessobj_main2 {
 	public void main(String[] args)
