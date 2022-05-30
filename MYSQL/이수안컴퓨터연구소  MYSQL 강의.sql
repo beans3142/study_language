@@ -48,3 +48,47 @@ SELECT SQRT(1.2),EXP(9),POW(2,3);
 SELECT SIN(pi()/2);
 SELECT RAND();
 SELECT NOW(),CURDATE(),CURTIME();
+SELECT DATE(13);
+SELECT YEAR(12);
+SELECT DATE(NOW());
+SELECT TIME(NOW());
+SELECT MONTHNAME(NOW());
+SELECT DAYNAME(NOW());
+SELECT DAYOFMONTH(NOW());
+CREATE DATABASE beans3142;
+USE beans3142;
+SHOW TABLES;
+CREATE TABLE city2 AS SELECT * FROM city;
+CREATE TABLE city2;
+SELECT Name,Population FROM city2;
+USE beans3142;
+CREATE INDEX colIdx ON personinfo(col1);
+CREATE INDEX colIdx2 ON personinfo(Name);
+SHOW INDEX FROM personinfo;
+
+ALTER TABLE personinfo
+ADD FULLTEXT colIdx3(Name);
+
+
+CREATE VIEW cityview AS SELECT Name,countryCode,Population FROM city;
+SELECT * FROM cityview;
+
+USE WORLD;
+CREATE VIEW allview AS SELECT city.Name, country.SurfaceArea, city.Population, countrylanguage.language 
+FROM city
+JOIN country ON city.Countrycode=country.Code 
+JOIN countrylanguage ON city.CountryCode = countrylanguage.Countrycode 
+WHERE city.COUNTRYCODE='KOR';
+
+DROP view allview;
+
+SELECT * FROM allview;
+
+USE beans3142;
+SHOW TABLES;
+SELECT * FROM PERSONINFO;
+INSERT INTO PersonInfo VALUE(1,'CHOOYOON',21,175,100);
+INSERT INTO PersonInfo VALUE(2,'DAEHOON',21,173,90);
+INSERT INTO PersonInfo VALUE(3,'HANJOHOON',23,150,31859);
+UPDATE personInfo SET weight=80 WHERE id=3;
+TRUNCATE TABLE personInfo;
